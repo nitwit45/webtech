@@ -1,0 +1,114 @@
+html{
+    background: url(./pictures/final_casette.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    overflow: hidden;
+}
+
+.heading{
+    color:rgb(181, 189, 192);
+    font-size:70px;
+    text-align:left;
+    position:relative;
+    padding-top:10px;
+    padding-left:160px;
+    font-family:  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: fade 1.5s ease-in;
+}
+
+#logo{
+    border-radius: 50%;
+    width:100px;
+    height: auto;
+    position: relative;
+    top: -140px;
+    right: -20px;
+}
+
+.awrap{
+    position: relative;
+    top: 350px;
+}
+
+.authors{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+/* cursor animations */
+.txt-rotate > .wrap { 
+    border-right: 0.15em solid #666;
+}
+
+
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: aliceblue;
+    animation: ;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateX()
+    }
+
+
+    100% {
+        transform: 
+    }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;;
+  }
+}
+
+
+
+/* ======= Responsive Design =========== */
+
+@media screen and (max-width: 455px ){
+
+    html{
+        height: 100vh;
+        width: 100vw;
+        background-position: center 100px bottom 100px;
+        /* background-position: calc(100% - 100px) calc(100% - 10px); */
+    }
+
+    #logo{
+        border-radius: 50%;
+        width:60px;
+        height: 60px;
+        position: relative;
+        top: -70px;
+        left: 15px;
+    }
+
+    .heading{
+        font-size: 30px;
+        padding-left:100px;
+        padding-top: 25px;
+    }
+
+    .authors{
+        font-size: 10px;
+    }
+
+    .awrap{
+        position: relative;
+        top: 450px;
+    }
+}

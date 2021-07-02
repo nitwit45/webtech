@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*
+{   
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#2196f3 ;
+    overflow: hidden;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 20vh;
+}
+
+
+.btn
+{
+    position: relative;
+    padding: 15px 20px;
+    background: #fff;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    color: #03a9f4;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 4px;
+}
+#popup
+{
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    background: #fff;
+    width: 450px;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.5s;
+    visibility: hidden;
+}
+#popup.active
+{
+    visibility: visible;
+    top: 50%;
+}
+#popup .content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#popup .content img
+{
+    max-width: 80px;
+}
+#popup .content h2
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin: 20px 0 10px;
+}
+#popup .content p
+{
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+#popup .content .inputBox
+{
+    position: relative;
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#popup .content .inputBox input
+{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    outline: none;
+    font-size: 14px;
+}
+#popup .content .inputBox input[type="submit"]
+{
+    max-width: 150px;
+    background: #03a9f4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+.close
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+#popup .indicator
+{
+    position: absolute;
+    top: 215px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+}
+#popup.valid .indicator
+{
+    background: #0f0;
+    box-shadow: 0 0 5px #0f0,
+                0 0 5px #0f0,
+                0 0 5px #0f0,
+                0 0 5px #0f0;
+}
+#popup.invalid .indicator
+{
+    background: #f00;
+    box-shadow: 0 0 5px #f00,
+                0 0 5px #f00,
+                0 0 5px #f00,
+                0 0 5px #f00;
+}
+.footer{
+    margin-top: 700px;
+}
+.footer footer{
+    background: transparent;
+    border-radius: 10px;
+    margin-left: 140px;
+}
+.footer footer a:link{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+.footer footer a:visited{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+.footer footer a:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 192, 192);
+    text-decoration: underline;
+    border-radius: 15px;
+    padding: 10px;
+}

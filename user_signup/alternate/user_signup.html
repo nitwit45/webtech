@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./user_signup.css">
+    </head>
+    <body>
+        
+        <!-- Modal  -->
+
+        <div class="modal" id="modal" data-animation="slideInOutTop">
+            <div class="modal-dialog">
+                <header class="modal-header">
+                Please Fill The following Before Proceeding
+                <button class="close-modal" aria-label="close modal" data-close>
+                    ✕  
+                </button>
+                </header>
+                <section class="modal-content">
+                <p><strong>Press ✕, ESC, or click outside of the modal to close it</strong></p>
+                <p></p>
+                <div class="errormsgs">
+
+                </div>
+                </section>
+                <footer class="modal-footer">
+                Thank you for your time
+                </footer>
+            </div>
+        </div>
+
+        <!-- End modal -->
+
+        <main>
+            <div id="part1">
+                <h1>Sign up</h1>
+
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Name" name="name" id='Name' autocomplete="off" />
+                    <label for="name" class="form__label">Name</label>
+                </div>
+                
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Email" name="Email" id='Email' autocomplete="off" />
+                    <label for="Email" class="form__label">Email</label>
+                </div>
+
+                <div class="form__group field">
+                    <input type="password" class="form__field" placeholder="Password" name="Password" id='Password' autocomplete="off" />
+                    <label for="Password" class="form__label">Password</label>
+                </div>
+
+                <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="Gender" name="Gender" id='Gender' autocomplete="off" />
+                    <label for="Gender" class="form__label">Gender</label>
+                </div>
+                
+                <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="Occupation" name="Occupation" id='Occupation' autocomplete="off" />
+                    <label for="Occupation" class="form__label">Occupation</label>
+                </div>
+                
+                <!-- <button type="button" class="open-modal">Continue</button> -->
+                <div class="">
+                    <button id="goBack" type="button" class="btn">Cancel</button>
+                    <button type="button" class="btn continue">Continue</button>
+                </div>
+            </div>
+
+            <div id="part2">
+                <h1>Additional Info</h1>
+
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Price" name="Price" id='Price' autocomplete="off" />
+                    <label for="Price" class="form__label">Price</label>
+                </div>
+                
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Brands" name="Brands" id='Brands' autocomplete="off" />
+                    <label for="Brands" class="form__label">Brands</label>
+                </div>
+
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Features" name="Features" id='Features' autocomplete="off" />
+                    <label for="Features" class="form__label">Features</label>
+                </div>
+
+                <div class="form__group field">
+                    <input type="text" class="form__field" placeholder="Genres" name="Genres" id='Genres' autocomplete="off" />
+                    <label for="Genres" class="form__label">Genres</label>
+                </div>
+                
+            <div class="">
+                <button type="button" class="btn back">Go Back</button>
+                <button type="button" class="open-modal">Submit</button>
+            </div>
+
+            </div>
+        </main>
+
+
+        
+
+        
+        <script src="./user_signup.js" async defer></script>
+    </body>
+</html>

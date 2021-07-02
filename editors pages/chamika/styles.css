@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Consolas;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+#profile-pic {
+    border-radius: 150%;
+    width: 200px;
+    height: auto;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    position: relative;
+    width: 1400px;
+    height: 700px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.wrapper:hover {
+    transform: translateY(-20px);
+}
+
+.wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #e049c7, #ff3c00);
+
+}
+
+.wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, hsl(327, 68%, 44%), #b616a8);
+    filter: blur(30px);
+}
+
+.wrapper span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.wrapper span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.details {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.details h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.details a {
+    display: inline-block;
+    font-size: 1.1em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+#intro {
+    width: 20%;
+    height: 100%;
+    z-index: 12;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-roles {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    z-index: 12;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-roles li {
+    margin-left: 120px;
+    font-size: 1.1em;
+}

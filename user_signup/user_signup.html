@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sign up 📝 </title>
+    <meta name="author" content="Lasal Jayawardena">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./user_signup.css">
+    <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+
+<body>
+
+    <!-- Modal  -->
+
+    <div class="modal" id="modal" data-animation="slideInOutTop" role="article">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                Thank you for you time!
+                <button class="close-modal" aria-label="Close" data-close onclick="closeModal()">
+                    ✕
+                </button>
+            </header>
+            <section class="modal-content">
+                <p><strong id="rMsg">Dear Anna, Thank you for registering with Euphoria, You will be directed to our
+                        Gallery page.</strong></p>
+            </section>
+            <footer class="modal-footer" role="timer">
+                Lets get the party started 🥳 🎉🥂 in <span id="reidrectTime">5s</span>
+            </footer>
+        </div>
+    </div>
+
+    <!-- End modal -->
+
+    <h1>
+        <a href="../main.html"><img alt="Euphoria" class="logo" src="./logo.png" alt=""></a>
+    </h1>
+    <div class="container1" id="container1" role="main">
+        <form id="form1" class="form" role="form">
+            <h2>Register With Us</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" data-desc="Username" aria-required="true">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email" data-desc="Email" aria-required="true">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" data-desc="Password"
+                    aria-required="true">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2" placeholder="Re-enter password" data-desc="Re-Entered Password"
+                    aria-required="true">
+                <small>Error message</small>
+            </div>
+            <button id="cancelbtn" class="oppBtn" type="button" role="navigation"
+                onclick="cancelSignin()">Cancel</button>
+            <button class="" type="submit" role="button">Continue</button>
+        </form>
+    </div>
+
+    <div class="container2" id="container2" role="main">
+        <form id="form2" class="form" role="form">
+            <h2>Personal Details</h2>
+            <div class="form-control">
+                <label for="Maidenname">Maiden Name</label>
+                <input type="text" id="Maidenname" placeholder="Enter your first name" data-desc="Maiden Name"
+                    aria-required="true">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" placeholder="Enter your surname" data-desc="Surname"
+                    aria-required="true">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" data-desc="Gender" aria-required="true">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                    <option selected value="">-------</option>
+                </select>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" placeholder="Enter your current Occupatin" data-desc="Occupation"
+                    aria-required="true">
+                <small>Error message</small>
+            </div>
+            <button id="back1" class="oppBtn" type="button" onclick="backAction1()" role="button">Go Back</button>
+            <button class="" type="submit" role="button">Continue</button>
+        </form>
+    </div>
+
+    <div class="container3" id="container3" role="main">
+        <form id="form3" class="form" role="form">
+            <h2>Your Preferences</h2>
+            <div class="form-control">
+                <label for="FavouriteArtist">Favourite Artist</label>
+                <input type="text" id="FavouriteArtist" placeholder="Enter your favourite artist"
+                    data-desc="Favourite Artist" aria-required="true">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="price">Preferred Price $50 to <span id="prefPrice">$50</span></label>
+                <input type="range" id="price" value="0" min="50" max="1000" oninput="displayPrice()"
+                    aria-required="true">
+                <div id="h4-container">
+                    <div id="h4-subcontainer">
+                        <h1><span></span>0</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="prefResults">Preffered Number of Personalized Results</label>
+                <input type="text" id="prefResults" placeholder="Any number between 1 and 300"
+                    data-desc="Number of Results" aria-required="true">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="Mail">Get Updates Via Mail 📧</label>
+                <select name="Mail" id="Mail" data-desc="Mail" aria-required="true">
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                    <option selected value="">-------</option>
+                </select>
+                <small>Error message</small>
+            </div>
+            <button id="back2" class="oppBtn" type="button" onclick="backAction2()" role="button">Go Back</button>
+            <button class="open-modal" type="submit" role="button">Submit</button>
+        </form>
+    </div>
+
+    <footer id="page-footer" role="contentinfo" aria-label="Page Creator">
+        <h1>Created by <a target="_blank" href="../editors pages/lasal/main.html">Lasal Jayawardena</a></h1>
+        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <!-- Store wave object -->
+            <defs>
+                <path id="footer-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <!-- 73, 103, 198 -->
+            <g class="ocean">
+                <use xlink:href="#footer-wave" x="48" y="0" fill="rgba(73, 103, 198,0.7)" />
+                <use xlink:href="#footer-wave" x="48" y="3" fill="rgba(73, 103, 198,0.6)" />
+                <use xlink:href="#footer-wave" x="48" y="5" fill="rgba(73, 103, 198,0.3)" />
+                <use xlink:href="#footer-wave" x="48" y="7" fill="#7289da" />
+            </g>
+        </svg>
+    </footer>
+
+    <script src="./modal.js"></script>
+    <script src="./user_signup.js"></script>
+</body>
+
+</html>

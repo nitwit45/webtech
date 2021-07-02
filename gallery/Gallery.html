@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Gallery 📷 Page</title>
+    <meta name="author" content="Lasal Jayawardena">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Gallery.css">
+    <!-- From main StyleSheet -->
+    <link rel="stylesheet" href="../mainStyles.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
+</head>
+
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+
+            <input name="toggle" type="checkbox" />
+            <label for="toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+
+
+            <ul id="menu">
+                <a href="../main.html">
+                    <li>Home</li>
+                </a>
+                <a href="./Gallery.html">
+                    <li>Gallery</li>
+                </a>
+                <a href="../404_error_page/index.html">
+                    <li>Shop</li>
+                </a>
+                <a href="../js quiz/index.html">
+                    <li>Quiz</li>
+                </a>
+                <a href="../user_signup/user_signup.html">
+                    <li>Sign Up</li>
+                </a>
+                <a href="../contact_us/index.html">
+                    <li>Contact us</li>
+                </a>
+                <a href=".././about_us/about_us.html">
+                    <li>About us</li>
+                </a>
+            </ul>
+
+        </div>
+    </nav>
+    <main role="main" aria-label="Audio Visualizer">
+        <h1 role="heading">
+            <a href="../main.html"><img src="./logo.png" alt="Euphoria"></a> Top Trending Beatz
+        </h1>
+        <div class="vz-wrapper" role="document">
+            <audio id="myAudio" src="./music/allNight.mp3" data-author="Lionel Richie"
+                data-title="All Night Long"></audio>
+            <audio id="myAudio2" src="./music/bailando.mp3" data-author="Enrique Iglesias ft. Sean Paul"
+                data-title="Bailando"></audio>
+            <audio id="myAudio3" src="./music/bioject.mp3" data-author="Chen Boi & BIOJECT" data-title="Shinpi"></audio>
+            <audio id="myAudio4" src="./music/blueberry.mp3" data-author="Lil Mosey"
+                data-title="Blueberry Faygo"></audio>
+            <audio id="myAudio5" src="./music/bomdiggy.mp3" data-author="Zack Knight & Jasmin Walia"
+                data-title="Bom Diggy Diggy"></audio>
+
+            <div class="vz-wrapper -canvas">
+                <canvas id="myCanvas" width="500" height="420"></canvas>
+            </div>
+        </div>
+        <div class="diskTracks">
+            <div class="img-container"><img src="./images/allNight.jfif" data-audio="myAudio" alt=""></div>
+            <div class="img-container"><img src="./images/bailando.jfif" data-audio="myAudio2" alt=""></div>
+            <div class="img-container"><img src="./images/bioject.jfif" data-audio="myAudio3" alt=""></div>
+            <div class="img-container"><img src="./images/blueberry.jfif" data-audio="myAudio4" alt=""></div>
+            <div class="img-container"><img src="./images/bomdiggy.jfif" data-audio="myAudio5" alt=""></div>
+        </div>
+    </main>
+    <aside role="grid">
+        <div class="col1" role="gridcell">
+            <div class="genres">
+                <a target="_blank" href="./Genre_Music_Player/Classical_Genre/classicalG.html">
+                    <img class="imgL" src="./album_images/classic.jpg" alt="Classical">
+                </a>
+            </div>
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Country_Genre/countryG.html">
+                    <img class="imgL" src="./album_images/country.jpg" alt="Country">
+                </a>
+            </div>
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Default_Genre/defaultG.html">
+                    <img class="imgL" src="./album_images/music.jpg" alt="Top Hits">
+                </a>
+            </div>
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Dance_Genre/danceG.html">
+                    <img class="imgL" src="./album_images/dance.jpg" alt="Dance">
+                </a>
+            </div>
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Funk_Genre/funkG.html">
+                    <img class="imgL" src="./album_images/funk.jpg" alt="Funk">
+                </a>
+            </div>
+        </div>
+
+        <div class="col2" role="gridcell">
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Hip_Hop_Genre/hipHopG.html">
+                    <img class="imgL" src="./album_images/hipop.jpg" alt="Hip Hop">
+                </a>
+            </div>
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Latin_Genre/latinG.html">
+                    <img class="imgL" src="./album_images/latin.jpg" alt="Latin">
+                </a>
+            </div>
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Pop_Genre/popG.html">
+                    <img class="imgL" src="./album_images/pop.jpg" alt="Pop">
+                </a>
+            </div>
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Rap_Genre/rapG.html">
+                    <img class="imgL" src="./album_images/rap.jpg" alt="Rap">
+                </a>
+            </div>
+            <div class="genres" role="gridcell">
+                <a target="_blank" href="./Genre_Music_Player/Rock_Genre/rockG.html">
+                    <img class="imgL" src="./album_images/rock.jpg" alt="Rock">
+                </a>
+            </div>
+        </div>
+
+
+    </aside>
+
+
+    <footer role="contentinfo" aria-label="Page Creator">
+        <p>Created by <a target="_blank" href="../editors pages/lasal/main.html">Lasal Jayawardena</a></p>
+        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <!-- Store wave object -->
+            <defs>
+                <path id="footer-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <!-- 73, 103, 198 -->
+            <g class="ocean">
+                <use xlink:href="#footer-wave" x="48" y="0" fill="rgba(73, 103, 198,0.7)" />
+                <use xlink:href="#footer-wave" x="48" y="3" fill="rgba(73, 103, 198,0.6)" />
+                <use xlink:href="#footer-wave" x="48" y="5" fill="rgba(73, 103, 198,0.3)" />
+                <use xlink:href="#footer-wave" x="48" y="7" fill="#7289da" />
+            </g>
+        </svg>
+    </footer>
+
+    <script src="./Audio_Visualizer.js"></script>
+    <script src="./Gallery.js"></script>
+</body>
+
+</html>

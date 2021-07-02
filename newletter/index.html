@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="../mainStyles.css">
+
+</head>
+<script src="./scripts.js"></script>
+
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+            <input name="toggle" type="checkbox" />
+            <label for="toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <ul id="menu">
+                <a href="../main.html">
+                    <li>Home</li>
+                </a>
+                <a href="../gallery/Gallery.html">
+                    <li>Gallery</li>
+                </a>
+                <a href="../shop/shop.html">
+                    <li>Shop</li>
+                </a>
+                <a href="../js quiz/index.html">
+                    <li>Quiz</li>
+                </a>
+                <a href="../user_signup/user_signup.html">
+                    <li>Sign Up</li>
+                </a>
+                <a href="../contact_us/index.html">
+                    <li>Contact us</li>
+                </a>
+                <a href="../about_us/about_us.html">
+                    <li>About us</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <a class="btn" onclick="popupToggle();">Subscribe Now!</a>
+    <div id="popup">
+        <div class="content">
+            <img src="email.png">
+            <h2>Join our News letter</h2>
+            <p>Get weekly updates about our latest music</p>
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Enter name">
+            </div>
+            <small id="nameError"></small>
+            <div class="inputBox">
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+            <small id="emailError"></small>
+            <div class="inputBox">
+                <input type="submit" placeholder="Sign Up" onclick="submitonclick()">
+            </div>
+        </div>
+        <a class="close" onclick="popupToggle();"><img src="close.png"></a>
+    </div>
+    <div id="popup" class="popup2">
+        <h2>Dear Anne, you have successfully subscribed for a personalized newsletter</h2>
+    </div>
+    <div class="footer">
+        <footer>
+            <a href="../editors pages/chamika/main.html" target="_blank">
+                <p6>Click to view editors Page(Chamika)</p6>
+            </a>
+        </footer>
+    </div>
+</body>
+
+</html>

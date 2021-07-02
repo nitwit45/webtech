@@ -1,0 +1,28 @@
+.-footer{
+    position: absolute;
+    bottom: 40px;
+    left: 35%;
+    z-index: 100;
+}
+.-footer footer{
+    background: rgb(167, 117, 117);
+    border-radius: 10px;
+    margin-left: 140px;
+}
+.-footer footer a:link{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+.-footer footer a:visited{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+.-footer footer a:hover{
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 192, 192);
+    text-decoration: underline;
+    border-radius: 15px;
+    padding: 10px;
+}

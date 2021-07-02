@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2020 Favourites ❤️</title>
+    <meta name="author" content="Lasal Jayawardena">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Play Icon source -->
+    <!-- <script src="https://kit.fontawesome.com/0de6872c0d.js" crossorigin="anonymous"></script> -->
+    <script src="../FontAwesome.js"></script>    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body>
+
+    <h1 role="heading">2020 Favourites ❤ Music Player</h1>
+
+    <div class="music-container " id="music-container" role="main">
+        <div class="music-info">
+            <h4 id="title">
+
+            </h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress">
+
+                </div>
+            </div>
+        </div>
+
+        <audio src="../musics/panda.mp3" id="audio"></audio>
+
+        <div class="img-container">
+            <img src="../images/panda.jfif" alt="music cover" id="cover">
+        </div>
+        <div class="navigation" role="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+
+            <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="lyrics" role="article">
+        <iframe id="lyrics" src="../lyrics_Scroller.html" frameborder="0"></iframe>
+    </div>
+
+    <footer role="contentinfo" aria-label="Page Creator">
+        <p>Created by <a target="_blank" href="../../../editors pages/lasal/main.html">Lasal Jayawardena</a></p>
+        <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <!-- Store wave object -->
+            <defs>
+                <path id="footer-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <!-- 114,137,218 -->
+            <g class="ocean">
+                <use xlink:href="#footer-wave" x="48" y="0" fill="rgba(218, 100, 168, 0.7)" />
+                <use xlink:href="#footer-wave" x="48" y="3" fill="rgba(218, 100, 168, 0.6)" />
+                <use xlink:href="#footer-wave" x="48" y="5" fill="rgba(218, 100, 168, 0.3)" />
+                <use xlink:href="#footer-wave" x="48" y="7" fill="rgba(218, 100, 168, 1)" />
+            </g>
+        </svg>
+    </footer>
+
+    <script src="./default.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+
+</body>
+
+</html>

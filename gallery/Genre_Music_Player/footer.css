@@ -1,0 +1,70 @@
+/* Footer Styles */
+
+footer {
+    /* z-index: 100; */
+    position: absolute;
+    left: 0;
+    bottom: -25vh;
+    width: 100vw;
+}
+
+footer p {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    color: rgb(1, 4, 31);
+}
+
+footer p a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer p:hover a {
+    color: rgb(222, 222, 230);
+    /* color: rgba(218, 100, 168, 0.7)); */
+}
+
+.waves {
+    width: 100%;
+    height: 18vh;
+}
+
+/* Wave Animation */
+
+.ocean>use {
+    animation: contimous 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.ocean>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.ocean>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.ocean>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.ocean>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes contimous {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}

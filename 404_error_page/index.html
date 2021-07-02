@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 ⚠️</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="loader" role="article">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="shadow">
+        </div>
+    </div>
+
+    <div class="cover"></div>
+
+    <main id="container" role="main">
+        <div class="content">
+            <h2>404</h2>
+            <h4>Page under Construction</h4>
+            <br>
+            <a id="back">Go Back</a>
+            <br>
+            <a href="../main.html">Back To Home</a>
+        </div>
+    </main>
+
+    <script>
+        const container = document.getElementById('container');
+        window.onmousemove = (e) => {
+            const x = -e.clientX / 5;
+            const y = -e.clientY / 5;
+            container.style.backgroundPositionX = x + 'px';
+            container.style.backgroundPositionY = y + 'px';
+        }
+
+        window.addEventListener("DOMContentLoaded", (e) => {
+            setTimeout(() => {
+                const main = document.querySelector("main");
+                const cover = document.querySelector(".cover");
+                const loader = document.querySelector(".loader");
+                main.style.opacity = 1;
+                cover.remove();
+                loader.remove();
+            }, 2000)
+        });
+
+        const back = document.getElementById("back");
+
+        back.addEventListener("click", (e) => {
+            // Used 2 beause chrome landing page counts as 1.
+            if (history.length > 2) {
+                history.back();
+            } else {
+                // used .href insteadof replace so the user can come back to form 
+                window.location.href = "../main.html";
+            }
+        });
+    </script>
+</body>
+
+</html>

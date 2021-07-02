@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="./quiz.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/68caa5df45.js"></script>
+    <!--USED FONTAWESOME TO GET A MEDAL ICON HIGH QUALITY(Additional Features)-->
+
+</head>
+
+<body>
+    <div class="bg">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input name="toggle" type="checkbox" />
+                <label for="toggle">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+                <ul id="menu">
+                    <a href="../main.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../gallery/Gallery.html">
+                        <li>Gallery</li>
+                    </a>
+                    <a href="../404_error_page/index.html">
+                        <li>Shop</li>
+                    </a>
+                    <a href="../js quiz/index.html">
+                        <li>Quiz</li>
+                    </a>
+                    <a href="../user_signup/user_signup.html">
+                        <li>Sign Up</li>
+                    </a>
+                    <a href="../contact_us/index.html">
+                        <li>Contact us</li>
+                    </a>
+                    <a href="../404_error_page/index.html">
+                        <li>About us</li>
+                    </a>
+                </ul>
+            </div>
+            <img class="logoimg" src="../mainpage/mainpageresources/images/logo.png" role="heading">
+
+        </nav>
+        <div class="quizbody">
+            <div class="quizcontainer" id="container">
+                <!--Start Button-->
+                <div class="startarea">Start Quiz</div>
+                <!--Rules Page-->
+                <div class="rules">
+                    <h2>Rules</h2>
+                    <h4>1. You are given 30 seconds to attempt each question</h4>
+                    <h4>2. Once You Select Your Answer.It Can't Be Undone.</h4>
+                    <h4>3. You'll Get Points On The Basic Of Your Correct Answers.</h4>
+                    <h4>4. You Can't Exit From The Quiz While You Are Playing.</h4>
+                    <div class="buttons">
+                        <button class="exit">Exit</button>
+                        <button class="next">Continue</button>
+                    </div>
+                </div>
+                <!--Quiz Page-->
+                <div class="quiz">
+                    <div class="quizheading">
+                        <h5>Euphoria</h5>
+                        <div class="timer">
+                            <h6>Time Elapsed</h6>
+                            <h6 class="time">00</h6>
+                        </div>
+                    </div>
+                    <!--questions Div-->
+                    <div class="questionsection">
+                        <h2 class="questionNo"></h2>
+                        <h2 class="questioninfo"></h2>
+                    </div>
+                    <!--Answer Div-->
+                    <div id="optionList">
+                        <h4 class="choice_que" id="answer1"></h4>
+                        <h4 class="choice_que" id="answer2"></h4>
+                        <h4 class="choice_que" id="answer3"></h4>
+                        <h4 class="choice_que" id="answer4"></h4>
+                    </div>
+                    <!--Results Section At the bottom of quiz-->
+                    <div class="answersArea">
+                        <h3 class="correct_total"></h3>
+                        <h3 class="continue_question">Next</h3>
+                    </div>
+                </div>
+                <!--Rewards Page-->
+                <div class="rewards">
+                    <i id="medal" class="fas fa-medal"></i>
+
+                    <h6>Level Up :) Quiz Completed</h6>
+                    <h6 class="marks"></h6>
+                    <button class="quit">Quit</button>
+                    <button class="restart">Restart</button>
+                </div>
+            </div>
+            <div class="footer">
+                <footer>
+                    <a href="../editors pages/nithila/main.html" target="_blank">
+                        <p6>Click to view editors Page(Nithila A.)</p6>
+                    </a>
+                </footer>
+            </div>
+            <script src="questions.js"></script>
+            <script src="scripts.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
